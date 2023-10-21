@@ -13,6 +13,8 @@ class TController {
       $(button).on("click", () => {
         const meret = $(button).attr("meret");
         $(".jatekter").html("");
+        $(".unicorn p").html("");
+        $(".ufo p").html("");
         new Jatekter($(".jatekter"), meret);
         this.info = new InfoView($(".info"));
       });
@@ -20,11 +22,11 @@ class TController {
   }
 
   jatekIndul() {
-    var unicorn = $(".unicorn p");
-    var ufo = $(".ufo p");
+    var unicorn = $(".unicorn");
+    var ufo = $(".ufo");
     new Jatekter($(".jatekter"), 3);
     this.tmodel = new TModel();
-    this.info = new InfoView($(".info"));
+    this.info = new InfoView($(unicorn));
 
     $(window).on("elemKivalaszt", (event) => {
       unicorn.html("");
@@ -32,14 +34,10 @@ class TController {
       const akt_j = this.tmodel.aktualisJatekos();
       event.detail.setErtek(akt_j);
       const jatekos = this.tmodel.kovetkezoJatekos();
-      console.log(jatekos);
-      var elem;
-      if (jatekos === "👽") {
-        elem = unicorn;
-      } else {
-        elem = ufo;
-      }
+     
+      let elem = jatekos === "👽" ? ufo : unicorn, szulo = jatekos === "👽" ? $(".unicorn") : $(".ufo");
       this.info.kiir(jatekos, elem);
+      this.info.nyilak(szulo);
     });
   }
 }

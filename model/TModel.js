@@ -5,13 +5,13 @@ class TModel {
     this.#lepes = 0;
   }
   aktualisJatekos() {
+    this.#ertek = this.#lepes % 2 === 0 ? "👨🏽‍🚀":"👽";
     this.#lepes++;
-    this.#ertek = this.#lepes % 2 === 0 ?"🌌": "👽"  ;
     return this.#ertek;
   }
 
   kovetkezoJatekos(){
-    this.#ertek = this.#ertek == "👽"? "🌌":"👽" ;
+    this.#ertek = this.#ertek == "👽"? "👨🏽‍🚀":"👽";
     return this.#ertek;
   }
 }
