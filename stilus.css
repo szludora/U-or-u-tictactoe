@@ -3,23 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
-html {
-  width: 100vw;
-  height: 100vh;
-}
+
 
 body {
   background-image: url(./img/bg2.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+ 
 }
-
-.container {
-  margin-bottom: 20px;
-  display: flex;
-}
-
 :root {
   --meret: 3;
 }
@@ -29,6 +21,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 1fr 100px;
+  margin-bottom: 20px;
+  height: 86vh;
 }
 
 .jatekter {
@@ -70,18 +64,6 @@ h1 {
   );
   margin-bottom: 30px;
 }
-/* .info p {
-  text-align: center;
-  font-size: 1em;
-  margin-top: 30px;
-  background: rgba(33, 9, 58, 0.623);
-  color: rgb(253, 253, 253);
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 4px 4px 3px rgb(101, 102, 175);
-  margin: 20px auto 20px auto;
-  width: 12em;
-} */
 
 .gombok {
   width: 100%;
@@ -153,17 +135,16 @@ h1 {
   top: 67px;
 }
 
-.ufo p, .unicorn p {
+.ufo p,
+.unicorn p {
   position: relative;
   text-align: center;
   top: 450px;
-  
-
 }
-.ufo p:nth-child(2){
+.ufo p:nth-child(2) {
   right: 29px;
 }
-.unicorn p:nth-child(2){
+.unicorn p:nth-child(2) {
   left: 48px;
 }
 
@@ -175,9 +156,19 @@ h1 {
 
 .nyilUnicorn {
   left: 40px;
-
 }
 
 .nyilUfo {
   right: 30px;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+footer p {
+ text-align: center;
+
 }
