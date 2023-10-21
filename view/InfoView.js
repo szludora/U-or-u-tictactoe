@@ -3,19 +3,20 @@ class InfoView {
     this.szulo = szulo;
     this.htmlOsszeallit();
   }
-
-  kiir(jatekos, elem) {
-     elem.html(jatekos + "  következik!");
+  
+  kiir(jatekos) {
+    var elem;
+    if (jatekos === "👽") {
+      elem = $(".kovetkezikUf");
+    } else {
+      elem = $(".kovetkezikU");
+    }
+    elem.html(jatekos + "  következik!");
   }
 
   htmlOsszeallit() {
-    // this.szulo.html("👨🏽‍🚀 kezdi a játékot!");
-    this.nyilak(this.szulo);
-  }
-
-  nyilak(szulo) {
-    console.log(szulo.hasClass("unicorn"));
-   
+    let szulo = $(".unicorn p:nth-child(2)")
+    szulo.html("👨🏽‍🚀 kezdi a játékot!");
   }
 }
 export default InfoView;

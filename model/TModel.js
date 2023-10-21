@@ -14,5 +14,12 @@ class TModel {
     this.#ertek = this.#ertek == "👽"? "👨🏽‍🚀":"👽";
     return this.#ertek;
   }
+
+  setLepes(lepes){
+    this.#lepes = lepes;
+  }
+  getLepes(){
+    return this.#lepes
+  }
 }
 export default TModel;
