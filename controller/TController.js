@@ -24,7 +24,9 @@ class TController {
         $(".nyilUnicorn").css("visibility", "visible");
         this.tmodel = new TModel();
         new Jatekter($(".jatekter"), meret);
-        // this.info = new InfoView($(".info"));
+        this.tmodel.setKarakter(this.karakter1);
+        this.tmodel.setKarakter2(this.karakter2);
+        this.info = new InfoView(this.karakter1, this.karakter);
       });
     });
   }
