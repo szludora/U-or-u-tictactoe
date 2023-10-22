@@ -1,0 +1,48 @@
+.unicorn {
+  background-image: url(../img/u2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 540px;
+  position: fixed;
+  left: -70px;
+}
+
+.ufo {
+  background-image: url(../img/t2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 500px;
+  grid-column: 3;
+  position: fixed;
+  right: 0;
+  top: 67px;
+}
+
+.ufo p,
+.unicorn p {
+  position: relative;
+  text-align: center;
+  top: 450px;
+}
+.ufo p:nth-child(2) {
+  right: 29px;
+}
+.unicorn p:nth-child(2) {
+  left: 48px;
+}
+
+.nyil {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.nyilUnicorn {
+  left: 40px;
+}
+
+.nyilUfo {
+  right: 30px;
+}

@@ -1,22 +1,25 @@
 class InfoView {
-  constructor(szulo) {
-    this.szulo = szulo;
+  constructor(karakter1, karakter2) {
+    this.karakter1 = karakter1;
+    this.karakter2 = karakter2;
     this.htmlOsszeallit();
   }
-  
-  kiir(jatekos) {
+
+  kiir(jatekos, karakter1, karakter2) {
     var elem;
-    if (jatekos === "👽") {
-      elem = $(".kovetkezikUf");
-    } else {
+
+    if (jatekos === karakter1) {
       elem = $(".kovetkezikU");
+      elem.html(karakter1 + "  következik!");
+    } else {
+      elem = $(".kovetkezikUf");
+      elem.html(karakter2 + "  következik!");
     }
-    elem.html(jatekos + "  következik!");
   }
 
   htmlOsszeallit() {
-    let szulo = $(".unicorn p:nth-child(2)")
-    szulo.html("👨🏽‍🚀 kezdi a játékot!");
+    let szulo = $(".kovetkezikU");
+    szulo.html(this.karakter1 + " kezdi a játékot!");
   }
 }
 export default InfoView;
