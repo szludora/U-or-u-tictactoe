@@ -1,4 +1,5 @@
-import TController from "./controller/Tcontroller.js";
+import TController from "./controller/TController.js";
+
 $(function () {
   new TController();
 });
