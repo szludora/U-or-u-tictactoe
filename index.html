@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Szlucska Dóra_ Tictactoe</title>
-    <link rel="stylesheet" href="stilus.css" />
+    <link rel="stylesheet" href="valaszto.css" />
     <script
       src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
       integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="main.js"></script>
+    <script type="module" src="./controller/TControllerValaszto.js"></script>
   </head>
   <body>
     <main>
@@ -18,30 +18,17 @@
         <h1>Tic-Tac-Toe</h1>
       </header>
       <div class="container">
-        <div class="unicorn">
-          <p class="uniNyil">
-            <img src="./img/arrow.gif" class="nyil nyilUnicorn" />
-          </p>
-          <p class="kovetkezikU"></p>
+        <div class="gombokContainer">
+          <button class="karakterB" kar="👽">👽</button>
+          <button class="karakterB" kar="🚀">🚀</button>
+          <button class="karakterB" kar="🌌">🌌</button>
+          <button class="karakterB" kar="🖖">🖖</button>
+          <button class="karakterB" kar="🪐">🪐</button>
+          <button class="karakterB" kar="🛰️">🛰️</button>
+          <button class="karakterB" kar="👨🏽‍🚀">👨🏽‍🚀</button>
+          <button class="karakterB" kar="💥">💥</button>
         </div>
-        <div class="gombok">
-          <button class="meretB" meret="3">Kicsi</button>
-          <button class="meretB" meret="5">Normál</button>
-          <button class="meretB" meret="7">Haladó</button>
-          <button class="meretB" meret="8">Legendás</button>
-        </div>
-        <div class="jatekter"></div>
-        <div class="info">
-          <a href="./valaszto.html">
-            <button class="gomb">Karakter választás</button>
-          </a>
-        </div>
-        <div class="ufo">
-          <p class="ufoNyil">
-            <img src="./img/arrow.gif" class="nyil nyilUfo" />
-          </p>
-          <p class="kovetkezikUf"></p>
-        </div>
+        <button class="start" href="./jatek.html">Mehet</button>
       </div>
       <footer><p>Szlucska Dóra</p></footer>
     </main>

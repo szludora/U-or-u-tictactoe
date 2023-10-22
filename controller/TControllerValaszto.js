@@ -33,7 +33,7 @@ $(".start").on("click", function () {
     ) {
       const karakter1Param = encodeURIComponent(karakter1.getKarakter());
       const karakter2Param = encodeURIComponent(karakter2.getKarakter());
-      const url = `index.html?karakter1=${karakter1Param}&karakter2=${karakter2Param}`;
+      const url = `jatek.html?karakter1=${karakter1Param}&karakter2=${karakter2Param}`;
       window.location.href = url;
     } else {
       alert("Kérlek, válassz karaktereket!");
