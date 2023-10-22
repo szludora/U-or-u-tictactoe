@@ -30,8 +30,6 @@
   margin: auto;
   width: 200px;
   height: 60px;
-  position: relative;
-  bottom: 200px;
   background: rgba(45, 15, 78, 0.24);
   color: rgb(253, 253, 253);
   border-radius: 10px;

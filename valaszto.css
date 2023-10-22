@@ -1,2 +1,45 @@
 @import url(./stilus/jatekTer.css);
 @import url(./stilus/karakterGombok.css);
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .karakterB {
+    width: 50px;
+    height: 50px;
+    font-size: 1em;
+    margin: auto;
+  }
+  .start {
+    width: 100px;
+    height: 45px;
+    grid-row: 2;
+    margin-top: 150px;
+  }
+  .gombokContainer {
+    margin-top: 0;
+    grid-template-columns: 1fr 1fr;
+    top: -20%;
+    padding: 0;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .valasztott1 {
+    border: solid 2px rgb(255, 0, 208);
+  }
+  .valasztott2 {
+    border: solid 2px rgb(16, 250, 160);
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
