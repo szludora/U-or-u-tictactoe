@@ -1,38 +1,37 @@
 .gombok {
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    margin: auto;
-    margin: 10px auto 10px auto;
-    grid-row: 1;
-    grid-column: 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-  }
-  
-  .meretB, .gomb{
-    background: rgba(45, 15, 78, 0.24);
-    color: rgb(253, 253, 253);
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 4px 4px 3px rgb(101, 102, 175);
-    width: 100%;
-    text-align: center;
-    font-size: 0.7em;
-  
-  }
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  margin: auto;
+  margin: 10px auto 10px auto;
+  grid-row: 1;
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
 
-  .gomb{
-    width: 10%;
-    text-align: center;
-    margin: auto;
+.meretB,
+.gomb {
+  background: rgba(45, 15, 78, 0.24);
+  color: rgb(253, 253, 253);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 4px 4px 3px rgb(101, 102, 175);
+  width: 100%;
+  text-align: center;
+  font-size: 0.7em;
+}
 
-  }
+.gomb {
+  width: 10%;
+}
 
-  .gomb a {
-    text-decoration: none;
-    color: white;
-    margin: auto;
+.gombContainer {
+  display: flex;
+  justify-content: center;
+}
 
-  }
+.gomb {
+  text-align: center;
+}

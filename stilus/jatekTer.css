@@ -31,7 +31,6 @@ html {
   grid-row: 2;
   grid-column: 2;
   margin:  0 auto;
-
   width: calc(var(--meret) * 4em);
   height: calc(var(--meret) * 4em);
   grid-template-columns: repeat(var(--meret), 4em);
